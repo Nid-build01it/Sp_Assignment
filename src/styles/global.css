@@ -1,0 +1,106 @@
+/* ⬇️ Add this at the top to allow sticky footer */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ⬇️ Wrapper to enable sticky footer behavior */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ⬇️ Main takes remaining space to push footer down */
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Already existing styles – keep as is */
+body {
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --border: #d4d4d4;
+}
+
+.dark {
+  --bg: #0e0e0e;
+  --text: #f5f5f5;
+  --border: #444;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: var(--bg);
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4f46e5;
+}
+
+.footer-credit {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+input, textarea {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 5px #4f46e5;
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3730a3;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
